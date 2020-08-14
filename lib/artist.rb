@@ -11,12 +11,12 @@ song.artist = self
 end
 
 def add_song_by_name(title)
-  binding.pry
   song = Song.new(title)
   add_song(song)
 end
 
 def songs
+  binding.pry
   Song.all.select {|song| song.artist == self}
 end
 
